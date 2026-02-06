@@ -1,0 +1,74 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Fundo da página */
+body {
+    background-image: url("imagens/太めなフチのかわいいポップな星背景全１７種.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay para melhorar leitura */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* Conteúdo */
+.box {
+    text-align: center;
+    color: white;
+}
+
+/* Botões */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px 16px;
+    border: none;
+    user-select: none;
+}
+
+/* Botão Sim */
+.button-1 {
+    background-color: #ea4c89;
+    color: white;
+}
+
+.button-1:hover {
+    background-color: #f082ac;
+}
+
+/* Botão Não */
+.button-2 {
+    background-color: #f0f0f0;
+    color: #333;
+    position: relative;
+}
